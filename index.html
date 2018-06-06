@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+    <div id="modal"  class="modal">
+        <div class="modal-content score-panel">
+            <button id="play-again-button" class="play-again">Play Again</button>
+            <p class="win-text">You won!</p>
+            <section>
+                <p class="clock">Final Time: 
+                    <span id="secondsPlay">00</span>:<span id="tensPlay">00</span>
+                </p>
+                <ul class="stars" id = "modal-stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+            </section>            
+        </div>
+  </div>
+    </div>    
 
     <div class="container">
         <header>
@@ -16,13 +33,14 @@
         </header>
 
         <section class="score-panel">
-        	<ul class="stars">
+        	<ul class="stars" id="panel-stars">
         		<li><i class="fa fa-star"></i></li>
         		<li><i class="fa fa-star"></i></li>
         		<li><i class="fa fa-star"></i></li>
         	</ul>
 
-        	<span class="moves">3</span> Moves
+        	<span class="moves" id="moves">3</span> Moves
+            <p class="clock">Time: <span id="seconds">00</span>:<span id="tens">00</span></p>
 
             <div class="restart" id="restart">
         		<i class="fa fa-repeat"></i>
